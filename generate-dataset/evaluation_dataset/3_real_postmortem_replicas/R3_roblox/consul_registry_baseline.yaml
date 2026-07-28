@@ -1,0 +1,4210 @@
+datacenter: us-east-1
+node_name: consul-server-primary
+server: true
+bootstrap_expect: 5
+use_streaming_backend: false
+boltdb_freelist_type: array
+gc_interval_seconds: 30
+services:
+- ID: svc-000000
+  Name: game-server
+  Addr: 10.0.0.1
+  Port: 8000
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.0
+  Check:
+    HTTP: http://10.0.0.1:8000/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000001
+  Name: chat-service
+  Addr: 10.0.1.8
+  Port: 8001
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.1
+  Check:
+    HTTP: http://10.0.0.1:8001/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000002
+  Name: asset-server
+  Addr: 10.0.2.15
+  Port: 8002
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.2
+  Check:
+    HTTP: http://10.0.0.1:8002/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000003
+  Name: auth-service
+  Addr: 10.0.3.22
+  Port: 8003
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.3
+  Check:
+    HTTP: http://10.0.0.1:8003/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000004
+  Name: presence-service
+  Addr: 10.0.4.29
+  Port: 8004
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.4
+  Check:
+    HTTP: http://10.0.0.1:8004/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000005
+  Name: notification-hub
+  Addr: 10.0.5.36
+  Port: 8005
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.5
+  Check:
+    HTTP: http://10.0.0.1:8005/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000006
+  Name: analytics-pipeline
+  Addr: 10.0.6.43
+  Port: 8006
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.6
+  Check:
+    HTTP: http://10.0.0.1:8006/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000007
+  Name: trading-service
+  Addr: 10.0.7.50
+  Port: 8007
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.7
+  Check:
+    HTTP: http://10.0.0.1:8007/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000008
+  Name: avatar-service
+  Addr: 10.0.8.57
+  Port: 8008
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.8
+  Check:
+    HTTP: http://10.0.0.1:8008/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000009
+  Name: inventory-service
+  Addr: 10.0.9.64
+  Port: 8009
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.9
+  Check:
+    HTTP: http://10.0.0.1:8009/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000010
+  Name: game-server
+  Addr: 10.0.10.71
+  Port: 8010
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.10
+  Check:
+    HTTP: http://10.0.0.1:8010/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000011
+  Name: chat-service
+  Addr: 10.0.11.78
+  Port: 8011
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.11
+  Check:
+    HTTP: http://10.0.0.1:8011/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000012
+  Name: asset-server
+  Addr: 10.0.12.85
+  Port: 8012
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.12
+  Check:
+    HTTP: http://10.0.0.1:8012/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000013
+  Name: auth-service
+  Addr: 10.0.13.92
+  Port: 8013
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.13
+  Check:
+    HTTP: http://10.0.0.1:8013/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000014
+  Name: presence-service
+  Addr: 10.0.14.99
+  Port: 8014
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.14
+  Check:
+    HTTP: http://10.0.0.1:8014/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000015
+  Name: notification-hub
+  Addr: 10.0.15.106
+  Port: 8015
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.15
+  Check:
+    HTTP: http://10.0.0.1:8015/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000016
+  Name: analytics-pipeline
+  Addr: 10.0.16.113
+  Port: 8016
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.16
+  Check:
+    HTTP: http://10.0.0.1:8016/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000017
+  Name: trading-service
+  Addr: 10.0.17.120
+  Port: 8017
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.17
+  Check:
+    HTTP: http://10.0.0.1:8017/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000018
+  Name: avatar-service
+  Addr: 10.0.18.127
+  Port: 8018
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.18
+  Check:
+    HTTP: http://10.0.0.1:8018/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000019
+  Name: inventory-service
+  Addr: 10.0.19.134
+  Port: 8019
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.19
+  Check:
+    HTTP: http://10.0.0.1:8019/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000020
+  Name: game-server
+  Addr: 10.0.20.141
+  Port: 8020
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.20
+  Check:
+    HTTP: http://10.0.0.1:8020/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000021
+  Name: chat-service
+  Addr: 10.0.21.148
+  Port: 8021
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.21
+  Check:
+    HTTP: http://10.0.0.1:8021/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000022
+  Name: asset-server
+  Addr: 10.0.22.155
+  Port: 8022
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.22
+  Check:
+    HTTP: http://10.0.0.1:8022/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000023
+  Name: auth-service
+  Addr: 10.0.23.162
+  Port: 8023
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.23
+  Check:
+    HTTP: http://10.0.0.1:8023/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000024
+  Name: presence-service
+  Addr: 10.0.24.169
+  Port: 8024
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.24
+  Check:
+    HTTP: http://10.0.0.1:8024/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000025
+  Name: notification-hub
+  Addr: 10.0.25.176
+  Port: 8025
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.25
+  Check:
+    HTTP: http://10.0.0.1:8025/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000026
+  Name: analytics-pipeline
+  Addr: 10.0.26.183
+  Port: 8026
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.26
+  Check:
+    HTTP: http://10.0.0.1:8026/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000027
+  Name: trading-service
+  Addr: 10.0.27.190
+  Port: 8027
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.27
+  Check:
+    HTTP: http://10.0.0.1:8027/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000028
+  Name: avatar-service
+  Addr: 10.0.28.197
+  Port: 8028
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.28
+  Check:
+    HTTP: http://10.0.0.1:8028/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000029
+  Name: inventory-service
+  Addr: 10.0.29.204
+  Port: 8029
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.29
+  Check:
+    HTTP: http://10.0.0.1:8029/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000030
+  Name: game-server
+  Addr: 10.0.30.211
+  Port: 8030
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.30
+  Check:
+    HTTP: http://10.0.0.1:8030/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000031
+  Name: chat-service
+  Addr: 10.0.31.218
+  Port: 8031
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.31
+  Check:
+    HTTP: http://10.0.0.1:8031/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000032
+  Name: asset-server
+  Addr: 10.0.32.225
+  Port: 8032
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.32
+  Check:
+    HTTP: http://10.0.0.1:8032/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000033
+  Name: auth-service
+  Addr: 10.0.33.232
+  Port: 8033
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.33
+  Check:
+    HTTP: http://10.0.0.1:8033/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000034
+  Name: presence-service
+  Addr: 10.0.34.239
+  Port: 8034
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.34
+  Check:
+    HTTP: http://10.0.0.1:8034/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000035
+  Name: notification-hub
+  Addr: 10.0.35.246
+  Port: 8035
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.35
+  Check:
+    HTTP: http://10.0.0.1:8035/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000036
+  Name: analytics-pipeline
+  Addr: 10.0.36.253
+  Port: 8036
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.36
+  Check:
+    HTTP: http://10.0.0.1:8036/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000037
+  Name: trading-service
+  Addr: 10.0.37.6
+  Port: 8037
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.37
+  Check:
+    HTTP: http://10.0.0.1:8037/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000038
+  Name: avatar-service
+  Addr: 10.0.38.13
+  Port: 8038
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.38
+  Check:
+    HTTP: http://10.0.0.1:8038/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000039
+  Name: inventory-service
+  Addr: 10.0.39.20
+  Port: 8039
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.39
+  Check:
+    HTTP: http://10.0.0.1:8039/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000040
+  Name: game-server
+  Addr: 10.0.40.27
+  Port: 8040
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.40
+  Check:
+    HTTP: http://10.0.0.1:8040/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000041
+  Name: chat-service
+  Addr: 10.0.41.34
+  Port: 8041
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.41
+  Check:
+    HTTP: http://10.0.0.1:8041/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000042
+  Name: asset-server
+  Addr: 10.0.42.41
+  Port: 8042
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.42
+  Check:
+    HTTP: http://10.0.0.1:8042/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000043
+  Name: auth-service
+  Addr: 10.0.43.48
+  Port: 8043
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.43
+  Check:
+    HTTP: http://10.0.0.1:8043/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000044
+  Name: presence-service
+  Addr: 10.0.44.55
+  Port: 8044
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.44
+  Check:
+    HTTP: http://10.0.0.1:8044/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000045
+  Name: notification-hub
+  Addr: 10.0.45.62
+  Port: 8045
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.45
+  Check:
+    HTTP: http://10.0.0.1:8045/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000046
+  Name: analytics-pipeline
+  Addr: 10.0.46.69
+  Port: 8046
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.46
+  Check:
+    HTTP: http://10.0.0.1:8046/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000047
+  Name: trading-service
+  Addr: 10.0.47.76
+  Port: 8047
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.47
+  Check:
+    HTTP: http://10.0.0.1:8047/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000048
+  Name: avatar-service
+  Addr: 10.0.48.83
+  Port: 8048
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.48
+  Check:
+    HTTP: http://10.0.0.1:8048/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000049
+  Name: inventory-service
+  Addr: 10.0.49.90
+  Port: 8049
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.49
+  Check:
+    HTTP: http://10.0.0.1:8049/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000050
+  Name: game-server
+  Addr: 10.0.50.97
+  Port: 8050
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.50
+  Check:
+    HTTP: http://10.0.0.1:8050/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000051
+  Name: chat-service
+  Addr: 10.0.51.104
+  Port: 8051
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.51
+  Check:
+    HTTP: http://10.0.0.1:8051/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000052
+  Name: asset-server
+  Addr: 10.0.52.111
+  Port: 8052
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.52
+  Check:
+    HTTP: http://10.0.0.1:8052/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000053
+  Name: auth-service
+  Addr: 10.0.53.118
+  Port: 8053
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.53
+  Check:
+    HTTP: http://10.0.0.1:8053/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000054
+  Name: presence-service
+  Addr: 10.0.54.125
+  Port: 8054
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.54
+  Check:
+    HTTP: http://10.0.0.1:8054/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000055
+  Name: notification-hub
+  Addr: 10.0.55.132
+  Port: 8055
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.55
+  Check:
+    HTTP: http://10.0.0.1:8055/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000056
+  Name: analytics-pipeline
+  Addr: 10.0.56.139
+  Port: 8056
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.56
+  Check:
+    HTTP: http://10.0.0.1:8056/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000057
+  Name: trading-service
+  Addr: 10.0.57.146
+  Port: 8057
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.57
+  Check:
+    HTTP: http://10.0.0.1:8057/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000058
+  Name: avatar-service
+  Addr: 10.0.58.153
+  Port: 8058
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.58
+  Check:
+    HTTP: http://10.0.0.1:8058/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000059
+  Name: inventory-service
+  Addr: 10.0.59.160
+  Port: 8059
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.59
+  Check:
+    HTTP: http://10.0.0.1:8059/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000060
+  Name: game-server
+  Addr: 10.0.60.167
+  Port: 8060
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.60
+  Check:
+    HTTP: http://10.0.0.1:8060/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000061
+  Name: chat-service
+  Addr: 10.0.61.174
+  Port: 8061
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.61
+  Check:
+    HTTP: http://10.0.0.1:8061/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000062
+  Name: asset-server
+  Addr: 10.0.62.181
+  Port: 8062
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.62
+  Check:
+    HTTP: http://10.0.0.1:8062/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000063
+  Name: auth-service
+  Addr: 10.0.63.188
+  Port: 8063
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.63
+  Check:
+    HTTP: http://10.0.0.1:8063/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000064
+  Name: presence-service
+  Addr: 10.0.64.195
+  Port: 8064
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.64
+  Check:
+    HTTP: http://10.0.0.1:8064/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000065
+  Name: notification-hub
+  Addr: 10.0.65.202
+  Port: 8065
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.65
+  Check:
+    HTTP: http://10.0.0.1:8065/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000066
+  Name: analytics-pipeline
+  Addr: 10.0.66.209
+  Port: 8066
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.66
+  Check:
+    HTTP: http://10.0.0.1:8066/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000067
+  Name: trading-service
+  Addr: 10.0.67.216
+  Port: 8067
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.67
+  Check:
+    HTTP: http://10.0.0.1:8067/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000068
+  Name: avatar-service
+  Addr: 10.0.68.223
+  Port: 8068
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.68
+  Check:
+    HTTP: http://10.0.0.1:8068/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000069
+  Name: inventory-service
+  Addr: 10.0.69.230
+  Port: 8069
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.69
+  Check:
+    HTTP: http://10.0.0.1:8069/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000070
+  Name: game-server
+  Addr: 10.0.70.237
+  Port: 8070
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.70
+  Check:
+    HTTP: http://10.0.0.1:8070/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000071
+  Name: chat-service
+  Addr: 10.0.71.244
+  Port: 8071
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.71
+  Check:
+    HTTP: http://10.0.0.1:8071/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000072
+  Name: asset-server
+  Addr: 10.0.72.251
+  Port: 8072
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.72
+  Check:
+    HTTP: http://10.0.0.1:8072/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000073
+  Name: auth-service
+  Addr: 10.0.73.4
+  Port: 8073
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.73
+  Check:
+    HTTP: http://10.0.0.1:8073/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000074
+  Name: presence-service
+  Addr: 10.0.74.11
+  Port: 8074
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.74
+  Check:
+    HTTP: http://10.0.0.1:8074/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000075
+  Name: notification-hub
+  Addr: 10.0.75.18
+  Port: 8075
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.75
+  Check:
+    HTTP: http://10.0.0.1:8075/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000076
+  Name: analytics-pipeline
+  Addr: 10.0.76.25
+  Port: 8076
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.76
+  Check:
+    HTTP: http://10.0.0.1:8076/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000077
+  Name: trading-service
+  Addr: 10.0.77.32
+  Port: 8077
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.77
+  Check:
+    HTTP: http://10.0.0.1:8077/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000078
+  Name: avatar-service
+  Addr: 10.0.78.39
+  Port: 8078
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.78
+  Check:
+    HTTP: http://10.0.0.1:8078/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000079
+  Name: inventory-service
+  Addr: 10.0.79.46
+  Port: 8079
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.79
+  Check:
+    HTTP: http://10.0.0.1:8079/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000080
+  Name: game-server
+  Addr: 10.0.80.53
+  Port: 8080
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.80
+  Check:
+    HTTP: http://10.0.0.1:8080/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000081
+  Name: chat-service
+  Addr: 10.0.81.60
+  Port: 8081
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.81
+  Check:
+    HTTP: http://10.0.0.1:8081/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000082
+  Name: asset-server
+  Addr: 10.0.82.67
+  Port: 8082
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.82
+  Check:
+    HTTP: http://10.0.0.1:8082/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000083
+  Name: auth-service
+  Addr: 10.0.83.74
+  Port: 8083
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.83
+  Check:
+    HTTP: http://10.0.0.1:8083/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000084
+  Name: presence-service
+  Addr: 10.0.84.81
+  Port: 8084
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.84
+  Check:
+    HTTP: http://10.0.0.1:8084/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000085
+  Name: notification-hub
+  Addr: 10.0.85.88
+  Port: 8085
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.85
+  Check:
+    HTTP: http://10.0.0.1:8085/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000086
+  Name: analytics-pipeline
+  Addr: 10.0.86.95
+  Port: 8086
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.86
+  Check:
+    HTTP: http://10.0.0.1:8086/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000087
+  Name: trading-service
+  Addr: 10.0.87.102
+  Port: 8087
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.87
+  Check:
+    HTTP: http://10.0.0.1:8087/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000088
+  Name: avatar-service
+  Addr: 10.0.88.109
+  Port: 8088
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.88
+  Check:
+    HTTP: http://10.0.0.1:8088/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000089
+  Name: inventory-service
+  Addr: 10.0.89.116
+  Port: 8089
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.89
+  Check:
+    HTTP: http://10.0.0.1:8089/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000090
+  Name: game-server
+  Addr: 10.0.90.123
+  Port: 8090
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.90
+  Check:
+    HTTP: http://10.0.0.1:8090/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000091
+  Name: chat-service
+  Addr: 10.0.91.130
+  Port: 8091
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.91
+  Check:
+    HTTP: http://10.0.0.1:8091/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000092
+  Name: asset-server
+  Addr: 10.0.92.137
+  Port: 8092
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.92
+  Check:
+    HTTP: http://10.0.0.1:8092/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000093
+  Name: auth-service
+  Addr: 10.0.93.144
+  Port: 8093
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.93
+  Check:
+    HTTP: http://10.0.0.1:8093/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000094
+  Name: presence-service
+  Addr: 10.0.94.151
+  Port: 8094
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.94
+  Check:
+    HTTP: http://10.0.0.1:8094/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000095
+  Name: notification-hub
+  Addr: 10.0.95.158
+  Port: 8095
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.95
+  Check:
+    HTTP: http://10.0.0.1:8095/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000096
+  Name: analytics-pipeline
+  Addr: 10.0.96.165
+  Port: 8096
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.96
+  Check:
+    HTTP: http://10.0.0.1:8096/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000097
+  Name: trading-service
+  Addr: 10.0.97.172
+  Port: 8097
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.97
+  Check:
+    HTTP: http://10.0.0.1:8097/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000098
+  Name: avatar-service
+  Addr: 10.0.98.179
+  Port: 8098
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.98
+  Check:
+    HTTP: http://10.0.0.1:8098/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000099
+  Name: inventory-service
+  Addr: 10.0.99.186
+  Port: 8099
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.99
+  Check:
+    HTTP: http://10.0.0.1:8099/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000100
+  Name: game-server
+  Addr: 10.0.100.193
+  Port: 8100
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.0
+  Check:
+    HTTP: http://10.0.0.1:8100/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000101
+  Name: chat-service
+  Addr: 10.0.101.200
+  Port: 8101
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.1
+  Check:
+    HTTP: http://10.0.0.1:8101/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000102
+  Name: asset-server
+  Addr: 10.0.102.207
+  Port: 8102
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.2
+  Check:
+    HTTP: http://10.0.0.1:8102/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000103
+  Name: auth-service
+  Addr: 10.0.103.214
+  Port: 8103
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.3
+  Check:
+    HTTP: http://10.0.0.1:8103/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000104
+  Name: presence-service
+  Addr: 10.0.104.221
+  Port: 8104
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.4
+  Check:
+    HTTP: http://10.0.0.1:8104/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000105
+  Name: notification-hub
+  Addr: 10.0.105.228
+  Port: 8105
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.5
+  Check:
+    HTTP: http://10.0.0.1:8105/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000106
+  Name: analytics-pipeline
+  Addr: 10.0.106.235
+  Port: 8106
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.6
+  Check:
+    HTTP: http://10.0.0.1:8106/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000107
+  Name: trading-service
+  Addr: 10.0.107.242
+  Port: 8107
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.7
+  Check:
+    HTTP: http://10.0.0.1:8107/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000108
+  Name: avatar-service
+  Addr: 10.0.108.249
+  Port: 8108
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.8
+  Check:
+    HTTP: http://10.0.0.1:8108/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000109
+  Name: inventory-service
+  Addr: 10.0.109.2
+  Port: 8109
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.9
+  Check:
+    HTTP: http://10.0.0.1:8109/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000110
+  Name: game-server
+  Addr: 10.0.110.9
+  Port: 8110
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.10
+  Check:
+    HTTP: http://10.0.0.1:8110/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000111
+  Name: chat-service
+  Addr: 10.0.111.16
+  Port: 8111
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.11
+  Check:
+    HTTP: http://10.0.0.1:8111/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000112
+  Name: asset-server
+  Addr: 10.0.112.23
+  Port: 8112
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.12
+  Check:
+    HTTP: http://10.0.0.1:8112/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000113
+  Name: auth-service
+  Addr: 10.0.113.30
+  Port: 8113
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.13
+  Check:
+    HTTP: http://10.0.0.1:8113/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000114
+  Name: presence-service
+  Addr: 10.0.114.37
+  Port: 8114
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.14
+  Check:
+    HTTP: http://10.0.0.1:8114/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000115
+  Name: notification-hub
+  Addr: 10.0.115.44
+  Port: 8115
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.15
+  Check:
+    HTTP: http://10.0.0.1:8115/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000116
+  Name: analytics-pipeline
+  Addr: 10.0.116.51
+  Port: 8116
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.16
+  Check:
+    HTTP: http://10.0.0.1:8116/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000117
+  Name: trading-service
+  Addr: 10.0.117.58
+  Port: 8117
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.17
+  Check:
+    HTTP: http://10.0.0.1:8117/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000118
+  Name: avatar-service
+  Addr: 10.0.118.65
+  Port: 8118
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.18
+  Check:
+    HTTP: http://10.0.0.1:8118/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000119
+  Name: inventory-service
+  Addr: 10.0.119.72
+  Port: 8119
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.19
+  Check:
+    HTTP: http://10.0.0.1:8119/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000120
+  Name: game-server
+  Addr: 10.0.120.79
+  Port: 8120
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.20
+  Check:
+    HTTP: http://10.0.0.1:8120/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000121
+  Name: chat-service
+  Addr: 10.0.121.86
+  Port: 8121
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.21
+  Check:
+    HTTP: http://10.0.0.1:8121/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000122
+  Name: asset-server
+  Addr: 10.0.122.93
+  Port: 8122
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.22
+  Check:
+    HTTP: http://10.0.0.1:8122/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000123
+  Name: auth-service
+  Addr: 10.0.123.100
+  Port: 8123
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.23
+  Check:
+    HTTP: http://10.0.0.1:8123/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000124
+  Name: presence-service
+  Addr: 10.0.124.107
+  Port: 8124
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.24
+  Check:
+    HTTP: http://10.0.0.1:8124/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000125
+  Name: notification-hub
+  Addr: 10.0.125.114
+  Port: 8125
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.25
+  Check:
+    HTTP: http://10.0.0.1:8125/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000126
+  Name: analytics-pipeline
+  Addr: 10.0.126.121
+  Port: 8126
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.26
+  Check:
+    HTTP: http://10.0.0.1:8126/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000127
+  Name: trading-service
+  Addr: 10.0.127.128
+  Port: 8127
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.27
+  Check:
+    HTTP: http://10.0.0.1:8127/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000128
+  Name: avatar-service
+  Addr: 10.0.128.135
+  Port: 8128
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.28
+  Check:
+    HTTP: http://10.0.0.1:8128/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000129
+  Name: inventory-service
+  Addr: 10.0.129.142
+  Port: 8129
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.29
+  Check:
+    HTTP: http://10.0.0.1:8129/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000130
+  Name: game-server
+  Addr: 10.0.130.149
+  Port: 8130
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.30
+  Check:
+    HTTP: http://10.0.0.1:8130/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000131
+  Name: chat-service
+  Addr: 10.0.131.156
+  Port: 8131
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.31
+  Check:
+    HTTP: http://10.0.0.1:8131/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000132
+  Name: asset-server
+  Addr: 10.0.132.163
+  Port: 8132
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.32
+  Check:
+    HTTP: http://10.0.0.1:8132/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000133
+  Name: auth-service
+  Addr: 10.0.133.170
+  Port: 8133
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.33
+  Check:
+    HTTP: http://10.0.0.1:8133/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000134
+  Name: presence-service
+  Addr: 10.0.134.177
+  Port: 8134
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.34
+  Check:
+    HTTP: http://10.0.0.1:8134/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000135
+  Name: notification-hub
+  Addr: 10.0.135.184
+  Port: 8135
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.35
+  Check:
+    HTTP: http://10.0.0.1:8135/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000136
+  Name: analytics-pipeline
+  Addr: 10.0.136.191
+  Port: 8136
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.36
+  Check:
+    HTTP: http://10.0.0.1:8136/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000137
+  Name: trading-service
+  Addr: 10.0.137.198
+  Port: 8137
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.37
+  Check:
+    HTTP: http://10.0.0.1:8137/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000138
+  Name: avatar-service
+  Addr: 10.0.138.205
+  Port: 8138
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.38
+  Check:
+    HTTP: http://10.0.0.1:8138/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000139
+  Name: inventory-service
+  Addr: 10.0.139.212
+  Port: 8139
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.39
+  Check:
+    HTTP: http://10.0.0.1:8139/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000140
+  Name: game-server
+  Addr: 10.0.140.219
+  Port: 8140
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.40
+  Check:
+    HTTP: http://10.0.0.1:8140/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000141
+  Name: chat-service
+  Addr: 10.0.141.226
+  Port: 8141
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.41
+  Check:
+    HTTP: http://10.0.0.1:8141/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000142
+  Name: asset-server
+  Addr: 10.0.142.233
+  Port: 8142
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.42
+  Check:
+    HTTP: http://10.0.0.1:8142/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000143
+  Name: auth-service
+  Addr: 10.0.143.240
+  Port: 8143
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.43
+  Check:
+    HTTP: http://10.0.0.1:8143/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000144
+  Name: presence-service
+  Addr: 10.0.144.247
+  Port: 8144
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.44
+  Check:
+    HTTP: http://10.0.0.1:8144/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000145
+  Name: notification-hub
+  Addr: 10.0.145.254
+  Port: 8145
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.45
+  Check:
+    HTTP: http://10.0.0.1:8145/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000146
+  Name: analytics-pipeline
+  Addr: 10.0.146.7
+  Port: 8146
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.46
+  Check:
+    HTTP: http://10.0.0.1:8146/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000147
+  Name: trading-service
+  Addr: 10.0.147.14
+  Port: 8147
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.47
+  Check:
+    HTTP: http://10.0.0.1:8147/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000148
+  Name: avatar-service
+  Addr: 10.0.148.21
+  Port: 8148
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.48
+  Check:
+    HTTP: http://10.0.0.1:8148/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000149
+  Name: inventory-service
+  Addr: 10.0.149.28
+  Port: 8149
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.49
+  Check:
+    HTTP: http://10.0.0.1:8149/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000150
+  Name: game-server
+  Addr: 10.0.150.35
+  Port: 8150
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.50
+  Check:
+    HTTP: http://10.0.0.1:8150/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000151
+  Name: chat-service
+  Addr: 10.0.151.42
+  Port: 8151
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.51
+  Check:
+    HTTP: http://10.0.0.1:8151/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000152
+  Name: asset-server
+  Addr: 10.0.152.49
+  Port: 8152
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.52
+  Check:
+    HTTP: http://10.0.0.1:8152/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000153
+  Name: auth-service
+  Addr: 10.0.153.56
+  Port: 8153
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.53
+  Check:
+    HTTP: http://10.0.0.1:8153/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000154
+  Name: presence-service
+  Addr: 10.0.154.63
+  Port: 8154
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.54
+  Check:
+    HTTP: http://10.0.0.1:8154/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000155
+  Name: notification-hub
+  Addr: 10.0.155.70
+  Port: 8155
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.55
+  Check:
+    HTTP: http://10.0.0.1:8155/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000156
+  Name: analytics-pipeline
+  Addr: 10.0.156.77
+  Port: 8156
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.56
+  Check:
+    HTTP: http://10.0.0.1:8156/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000157
+  Name: trading-service
+  Addr: 10.0.157.84
+  Port: 8157
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.57
+  Check:
+    HTTP: http://10.0.0.1:8157/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000158
+  Name: avatar-service
+  Addr: 10.0.158.91
+  Port: 8158
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.58
+  Check:
+    HTTP: http://10.0.0.1:8158/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000159
+  Name: inventory-service
+  Addr: 10.0.159.98
+  Port: 8159
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.59
+  Check:
+    HTTP: http://10.0.0.1:8159/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000160
+  Name: game-server
+  Addr: 10.0.160.105
+  Port: 8160
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.60
+  Check:
+    HTTP: http://10.0.0.1:8160/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000161
+  Name: chat-service
+  Addr: 10.0.161.112
+  Port: 8161
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.61
+  Check:
+    HTTP: http://10.0.0.1:8161/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000162
+  Name: asset-server
+  Addr: 10.0.162.119
+  Port: 8162
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.62
+  Check:
+    HTTP: http://10.0.0.1:8162/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000163
+  Name: auth-service
+  Addr: 10.0.163.126
+  Port: 8163
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.63
+  Check:
+    HTTP: http://10.0.0.1:8163/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000164
+  Name: presence-service
+  Addr: 10.0.164.133
+  Port: 8164
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.64
+  Check:
+    HTTP: http://10.0.0.1:8164/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000165
+  Name: notification-hub
+  Addr: 10.0.165.140
+  Port: 8165
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.65
+  Check:
+    HTTP: http://10.0.0.1:8165/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000166
+  Name: analytics-pipeline
+  Addr: 10.0.166.147
+  Port: 8166
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.66
+  Check:
+    HTTP: http://10.0.0.1:8166/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000167
+  Name: trading-service
+  Addr: 10.0.167.154
+  Port: 8167
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.67
+  Check:
+    HTTP: http://10.0.0.1:8167/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000168
+  Name: avatar-service
+  Addr: 10.0.168.161
+  Port: 8168
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.68
+  Check:
+    HTTP: http://10.0.0.1:8168/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000169
+  Name: inventory-service
+  Addr: 10.0.169.168
+  Port: 8169
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.69
+  Check:
+    HTTP: http://10.0.0.1:8169/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000170
+  Name: game-server
+  Addr: 10.0.170.175
+  Port: 8170
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.70
+  Check:
+    HTTP: http://10.0.0.1:8170/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000171
+  Name: chat-service
+  Addr: 10.0.171.182
+  Port: 8171
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.71
+  Check:
+    HTTP: http://10.0.0.1:8171/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000172
+  Name: asset-server
+  Addr: 10.0.172.189
+  Port: 8172
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.72
+  Check:
+    HTTP: http://10.0.0.1:8172/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000173
+  Name: auth-service
+  Addr: 10.0.173.196
+  Port: 8173
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.73
+  Check:
+    HTTP: http://10.0.0.1:8173/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000174
+  Name: presence-service
+  Addr: 10.0.174.203
+  Port: 8174
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.74
+  Check:
+    HTTP: http://10.0.0.1:8174/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000175
+  Name: notification-hub
+  Addr: 10.0.175.210
+  Port: 8175
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.75
+  Check:
+    HTTP: http://10.0.0.1:8175/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000176
+  Name: analytics-pipeline
+  Addr: 10.0.176.217
+  Port: 8176
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.76
+  Check:
+    HTTP: http://10.0.0.1:8176/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000177
+  Name: trading-service
+  Addr: 10.0.177.224
+  Port: 8177
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.77
+  Check:
+    HTTP: http://10.0.0.1:8177/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000178
+  Name: avatar-service
+  Addr: 10.0.178.231
+  Port: 8178
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.78
+  Check:
+    HTTP: http://10.0.0.1:8178/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000179
+  Name: inventory-service
+  Addr: 10.0.179.238
+  Port: 8179
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.79
+  Check:
+    HTTP: http://10.0.0.1:8179/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000180
+  Name: game-server
+  Addr: 10.0.180.245
+  Port: 8180
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.80
+  Check:
+    HTTP: http://10.0.0.1:8180/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000181
+  Name: chat-service
+  Addr: 10.0.181.252
+  Port: 8181
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.81
+  Check:
+    HTTP: http://10.0.0.1:8181/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000182
+  Name: asset-server
+  Addr: 10.0.182.5
+  Port: 8182
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.82
+  Check:
+    HTTP: http://10.0.0.1:8182/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000183
+  Name: auth-service
+  Addr: 10.0.183.12
+  Port: 8183
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.83
+  Check:
+    HTTP: http://10.0.0.1:8183/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000184
+  Name: presence-service
+  Addr: 10.0.184.19
+  Port: 8184
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.84
+  Check:
+    HTTP: http://10.0.0.1:8184/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000185
+  Name: notification-hub
+  Addr: 10.0.185.26
+  Port: 8185
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.85
+  Check:
+    HTTP: http://10.0.0.1:8185/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000186
+  Name: analytics-pipeline
+  Addr: 10.0.186.33
+  Port: 8186
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.86
+  Check:
+    HTTP: http://10.0.0.1:8186/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000187
+  Name: trading-service
+  Addr: 10.0.187.40
+  Port: 8187
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.87
+  Check:
+    HTTP: http://10.0.0.1:8187/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000188
+  Name: avatar-service
+  Addr: 10.0.188.47
+  Port: 8188
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.88
+  Check:
+    HTTP: http://10.0.0.1:8188/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000189
+  Name: inventory-service
+  Addr: 10.0.189.54
+  Port: 8189
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.89
+  Check:
+    HTTP: http://10.0.0.1:8189/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000190
+  Name: game-server
+  Addr: 10.0.190.61
+  Port: 8190
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.90
+  Check:
+    HTTP: http://10.0.0.1:8190/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000191
+  Name: chat-service
+  Addr: 10.0.191.68
+  Port: 8191
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.91
+  Check:
+    HTTP: http://10.0.0.1:8191/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000192
+  Name: asset-server
+  Addr: 10.0.192.75
+  Port: 8192
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.92
+  Check:
+    HTTP: http://10.0.0.1:8192/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000193
+  Name: auth-service
+  Addr: 10.0.193.82
+  Port: 8193
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.93
+  Check:
+    HTTP: http://10.0.0.1:8193/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000194
+  Name: presence-service
+  Addr: 10.0.194.89
+  Port: 8194
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.94
+  Check:
+    HTTP: http://10.0.0.1:8194/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000195
+  Name: notification-hub
+  Addr: 10.0.195.96
+  Port: 8195
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.95
+  Check:
+    HTTP: http://10.0.0.1:8195/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000196
+  Name: analytics-pipeline
+  Addr: 10.0.196.103
+  Port: 8196
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.96
+  Check:
+    HTTP: http://10.0.0.1:8196/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000197
+  Name: trading-service
+  Addr: 10.0.197.110
+  Port: 8197
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.97
+  Check:
+    HTTP: http://10.0.0.1:8197/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000198
+  Name: avatar-service
+  Addr: 10.0.198.117
+  Port: 8198
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.98
+  Check:
+    HTTP: http://10.0.0.1:8198/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000199
+  Name: inventory-service
+  Addr: 10.0.199.124
+  Port: 8199
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.99
+  Check:
+    HTTP: http://10.0.0.1:8199/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000200
+  Name: game-server
+  Addr: 10.0.200.131
+  Port: 8200
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.0
+  Check:
+    HTTP: http://10.0.0.1:8200/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000201
+  Name: chat-service
+  Addr: 10.0.201.138
+  Port: 8201
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.1
+  Check:
+    HTTP: http://10.0.0.1:8201/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000202
+  Name: asset-server
+  Addr: 10.0.202.145
+  Port: 8202
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.2
+  Check:
+    HTTP: http://10.0.0.1:8202/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000203
+  Name: auth-service
+  Addr: 10.0.203.152
+  Port: 8203
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.3
+  Check:
+    HTTP: http://10.0.0.1:8203/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000204
+  Name: presence-service
+  Addr: 10.0.204.159
+  Port: 8204
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.4
+  Check:
+    HTTP: http://10.0.0.1:8204/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000205
+  Name: notification-hub
+  Addr: 10.0.205.166
+  Port: 8205
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.5
+  Check:
+    HTTP: http://10.0.0.1:8205/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000206
+  Name: analytics-pipeline
+  Addr: 10.0.206.173
+  Port: 8206
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.6
+  Check:
+    HTTP: http://10.0.0.1:8206/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000207
+  Name: trading-service
+  Addr: 10.0.207.180
+  Port: 8207
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.7
+  Check:
+    HTTP: http://10.0.0.1:8207/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000208
+  Name: avatar-service
+  Addr: 10.0.208.187
+  Port: 8208
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.8
+  Check:
+    HTTP: http://10.0.0.1:8208/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000209
+  Name: inventory-service
+  Addr: 10.0.209.194
+  Port: 8209
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.9
+  Check:
+    HTTP: http://10.0.0.1:8209/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000210
+  Name: game-server
+  Addr: 10.0.210.201
+  Port: 8210
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.10
+  Check:
+    HTTP: http://10.0.0.1:8210/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000211
+  Name: chat-service
+  Addr: 10.0.211.208
+  Port: 8211
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.11
+  Check:
+    HTTP: http://10.0.0.1:8211/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000212
+  Name: asset-server
+  Addr: 10.0.212.215
+  Port: 8212
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.12
+  Check:
+    HTTP: http://10.0.0.1:8212/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000213
+  Name: auth-service
+  Addr: 10.0.213.222
+  Port: 8213
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.13
+  Check:
+    HTTP: http://10.0.0.1:8213/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000214
+  Name: presence-service
+  Addr: 10.0.214.229
+  Port: 8214
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.14
+  Check:
+    HTTP: http://10.0.0.1:8214/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000215
+  Name: notification-hub
+  Addr: 10.0.215.236
+  Port: 8215
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.15
+  Check:
+    HTTP: http://10.0.0.1:8215/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000216
+  Name: analytics-pipeline
+  Addr: 10.0.216.243
+  Port: 8216
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.16
+  Check:
+    HTTP: http://10.0.0.1:8216/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000217
+  Name: trading-service
+  Addr: 10.0.217.250
+  Port: 8217
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.17
+  Check:
+    HTTP: http://10.0.0.1:8217/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000218
+  Name: avatar-service
+  Addr: 10.0.218.3
+  Port: 8218
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.18
+  Check:
+    HTTP: http://10.0.0.1:8218/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000219
+  Name: inventory-service
+  Addr: 10.0.219.10
+  Port: 8219
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.19
+  Check:
+    HTTP: http://10.0.0.1:8219/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000220
+  Name: game-server
+  Addr: 10.0.220.17
+  Port: 8220
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.20
+  Check:
+    HTTP: http://10.0.0.1:8220/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000221
+  Name: chat-service
+  Addr: 10.0.221.24
+  Port: 8221
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.21
+  Check:
+    HTTP: http://10.0.0.1:8221/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000222
+  Name: asset-server
+  Addr: 10.0.222.31
+  Port: 8222
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.22
+  Check:
+    HTTP: http://10.0.0.1:8222/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000223
+  Name: auth-service
+  Addr: 10.0.223.38
+  Port: 8223
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.23
+  Check:
+    HTTP: http://10.0.0.1:8223/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000224
+  Name: presence-service
+  Addr: 10.0.224.45
+  Port: 8224
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.24
+  Check:
+    HTTP: http://10.0.0.1:8224/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000225
+  Name: notification-hub
+  Addr: 10.0.225.52
+  Port: 8225
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.25
+  Check:
+    HTTP: http://10.0.0.1:8225/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000226
+  Name: analytics-pipeline
+  Addr: 10.0.226.59
+  Port: 8226
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.26
+  Check:
+    HTTP: http://10.0.0.1:8226/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000227
+  Name: trading-service
+  Addr: 10.0.227.66
+  Port: 8227
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.27
+  Check:
+    HTTP: http://10.0.0.1:8227/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000228
+  Name: avatar-service
+  Addr: 10.0.228.73
+  Port: 8228
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.28
+  Check:
+    HTTP: http://10.0.0.1:8228/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000229
+  Name: inventory-service
+  Addr: 10.0.229.80
+  Port: 8229
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.29
+  Check:
+    HTTP: http://10.0.0.1:8229/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000230
+  Name: game-server
+  Addr: 10.0.230.87
+  Port: 8230
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.30
+  Check:
+    HTTP: http://10.0.0.1:8230/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000231
+  Name: chat-service
+  Addr: 10.0.231.94
+  Port: 8231
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.31
+  Check:
+    HTTP: http://10.0.0.1:8231/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000232
+  Name: asset-server
+  Addr: 10.0.232.101
+  Port: 8232
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.32
+  Check:
+    HTTP: http://10.0.0.1:8232/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000233
+  Name: auth-service
+  Addr: 10.0.233.108
+  Port: 8233
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.33
+  Check:
+    HTTP: http://10.0.0.1:8233/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000234
+  Name: presence-service
+  Addr: 10.0.234.115
+  Port: 8234
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.34
+  Check:
+    HTTP: http://10.0.0.1:8234/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000235
+  Name: notification-hub
+  Addr: 10.0.235.122
+  Port: 8235
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.35
+  Check:
+    HTTP: http://10.0.0.1:8235/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000236
+  Name: analytics-pipeline
+  Addr: 10.0.236.129
+  Port: 8236
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.36
+  Check:
+    HTTP: http://10.0.0.1:8236/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000237
+  Name: trading-service
+  Addr: 10.0.237.136
+  Port: 8237
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.37
+  Check:
+    HTTP: http://10.0.0.1:8237/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000238
+  Name: avatar-service
+  Addr: 10.0.238.143
+  Port: 8238
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.38
+  Check:
+    HTTP: http://10.0.0.1:8238/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000239
+  Name: inventory-service
+  Addr: 10.0.239.150
+  Port: 8239
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.39
+  Check:
+    HTTP: http://10.0.0.1:8239/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000240
+  Name: game-server
+  Addr: 10.0.240.157
+  Port: 8240
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.40
+  Check:
+    HTTP: http://10.0.0.1:8240/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000241
+  Name: chat-service
+  Addr: 10.0.241.164
+  Port: 8241
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.41
+  Check:
+    HTTP: http://10.0.0.1:8241/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000242
+  Name: asset-server
+  Addr: 10.0.242.171
+  Port: 8242
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.42
+  Check:
+    HTTP: http://10.0.0.1:8242/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000243
+  Name: auth-service
+  Addr: 10.0.243.178
+  Port: 8243
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.43
+  Check:
+    HTTP: http://10.0.0.1:8243/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000244
+  Name: presence-service
+  Addr: 10.0.244.185
+  Port: 8244
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.44
+  Check:
+    HTTP: http://10.0.0.1:8244/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000245
+  Name: notification-hub
+  Addr: 10.0.245.192
+  Port: 8245
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.45
+  Check:
+    HTTP: http://10.0.0.1:8245/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000246
+  Name: analytics-pipeline
+  Addr: 10.0.246.199
+  Port: 8246
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.46
+  Check:
+    HTTP: http://10.0.0.1:8246/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000247
+  Name: trading-service
+  Addr: 10.0.247.206
+  Port: 8247
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.47
+  Check:
+    HTTP: http://10.0.0.1:8247/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000248
+  Name: avatar-service
+  Addr: 10.0.248.213
+  Port: 8248
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.48
+  Check:
+    HTTP: http://10.0.0.1:8248/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000249
+  Name: inventory-service
+  Addr: 10.0.249.220
+  Port: 8249
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.49
+  Check:
+    HTTP: http://10.0.0.1:8249/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000250
+  Name: game-server
+  Addr: 10.0.250.227
+  Port: 8250
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.50
+  Check:
+    HTTP: http://10.0.0.1:8250/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000251
+  Name: chat-service
+  Addr: 10.0.251.234
+  Port: 8251
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.51
+  Check:
+    HTTP: http://10.0.0.1:8251/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000252
+  Name: asset-server
+  Addr: 10.0.252.241
+  Port: 8252
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.52
+  Check:
+    HTTP: http://10.0.0.1:8252/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000253
+  Name: auth-service
+  Addr: 10.0.253.248
+  Port: 8253
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.53
+  Check:
+    HTTP: http://10.0.0.1:8253/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000254
+  Name: presence-service
+  Addr: 10.0.254.1
+  Port: 8254
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.54
+  Check:
+    HTTP: http://10.0.0.1:8254/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000255
+  Name: notification-hub
+  Addr: 10.0.255.8
+  Port: 8255
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.55
+  Check:
+    HTTP: http://10.0.0.1:8255/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000256
+  Name: analytics-pipeline
+  Addr: 10.1.0.15
+  Port: 8256
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.56
+  Check:
+    HTTP: http://10.0.0.1:8256/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000257
+  Name: trading-service
+  Addr: 10.1.1.22
+  Port: 8257
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.57
+  Check:
+    HTTP: http://10.0.0.1:8257/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000258
+  Name: avatar-service
+  Addr: 10.1.2.29
+  Port: 8258
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.58
+  Check:
+    HTTP: http://10.0.0.1:8258/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000259
+  Name: inventory-service
+  Addr: 10.1.3.36
+  Port: 8259
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.59
+  Check:
+    HTTP: http://10.0.0.1:8259/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000260
+  Name: game-server
+  Addr: 10.1.4.43
+  Port: 8260
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.60
+  Check:
+    HTTP: http://10.0.0.1:8260/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000261
+  Name: chat-service
+  Addr: 10.1.5.50
+  Port: 8261
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.61
+  Check:
+    HTTP: http://10.0.0.1:8261/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000262
+  Name: asset-server
+  Addr: 10.1.6.57
+  Port: 8262
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.62
+  Check:
+    HTTP: http://10.0.0.1:8262/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000263
+  Name: auth-service
+  Addr: 10.1.7.64
+  Port: 8263
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.63
+  Check:
+    HTTP: http://10.0.0.1:8263/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000264
+  Name: presence-service
+  Addr: 10.1.8.71
+  Port: 8264
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.64
+  Check:
+    HTTP: http://10.0.0.1:8264/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000265
+  Name: notification-hub
+  Addr: 10.1.9.78
+  Port: 8265
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.65
+  Check:
+    HTTP: http://10.0.0.1:8265/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000266
+  Name: analytics-pipeline
+  Addr: 10.1.10.85
+  Port: 8266
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.66
+  Check:
+    HTTP: http://10.0.0.1:8266/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000267
+  Name: trading-service
+  Addr: 10.1.11.92
+  Port: 8267
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.67
+  Check:
+    HTTP: http://10.0.0.1:8267/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000268
+  Name: avatar-service
+  Addr: 10.1.12.99
+  Port: 8268
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.68
+  Check:
+    HTTP: http://10.0.0.1:8268/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000269
+  Name: inventory-service
+  Addr: 10.1.13.106
+  Port: 8269
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.69
+  Check:
+    HTTP: http://10.0.0.1:8269/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000270
+  Name: game-server
+  Addr: 10.1.14.113
+  Port: 8270
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.70
+  Check:
+    HTTP: http://10.0.0.1:8270/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000271
+  Name: chat-service
+  Addr: 10.1.15.120
+  Port: 8271
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.71
+  Check:
+    HTTP: http://10.0.0.1:8271/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000272
+  Name: asset-server
+  Addr: 10.1.16.127
+  Port: 8272
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.72
+  Check:
+    HTTP: http://10.0.0.1:8272/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000273
+  Name: auth-service
+  Addr: 10.1.17.134
+  Port: 8273
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.73
+  Check:
+    HTTP: http://10.0.0.1:8273/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000274
+  Name: presence-service
+  Addr: 10.1.18.141
+  Port: 8274
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.74
+  Check:
+    HTTP: http://10.0.0.1:8274/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000275
+  Name: notification-hub
+  Addr: 10.1.19.148
+  Port: 8275
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.75
+  Check:
+    HTTP: http://10.0.0.1:8275/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000276
+  Name: analytics-pipeline
+  Addr: 10.1.20.155
+  Port: 8276
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.76
+  Check:
+    HTTP: http://10.0.0.1:8276/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000277
+  Name: trading-service
+  Addr: 10.1.21.162
+  Port: 8277
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.77
+  Check:
+    HTTP: http://10.0.0.1:8277/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000278
+  Name: avatar-service
+  Addr: 10.1.22.169
+  Port: 8278
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.78
+  Check:
+    HTTP: http://10.0.0.1:8278/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000279
+  Name: inventory-service
+  Addr: 10.1.23.176
+  Port: 8279
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.79
+  Check:
+    HTTP: http://10.0.0.1:8279/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000280
+  Name: game-server
+  Addr: 10.1.24.183
+  Port: 8280
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.80
+  Check:
+    HTTP: http://10.0.0.1:8280/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000281
+  Name: chat-service
+  Addr: 10.1.25.190
+  Port: 8281
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.81
+  Check:
+    HTTP: http://10.0.0.1:8281/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000282
+  Name: asset-server
+  Addr: 10.1.26.197
+  Port: 8282
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.82
+  Check:
+    HTTP: http://10.0.0.1:8282/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000283
+  Name: auth-service
+  Addr: 10.1.27.204
+  Port: 8283
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.83
+  Check:
+    HTTP: http://10.0.0.1:8283/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000284
+  Name: presence-service
+  Addr: 10.1.28.211
+  Port: 8284
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.84
+  Check:
+    HTTP: http://10.0.0.1:8284/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000285
+  Name: notification-hub
+  Addr: 10.1.29.218
+  Port: 8285
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.85
+  Check:
+    HTTP: http://10.0.0.1:8285/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000286
+  Name: analytics-pipeline
+  Addr: 10.1.30.225
+  Port: 8286
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.86
+  Check:
+    HTTP: http://10.0.0.1:8286/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000287
+  Name: trading-service
+  Addr: 10.1.31.232
+  Port: 8287
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.87
+  Check:
+    HTTP: http://10.0.0.1:8287/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000288
+  Name: avatar-service
+  Addr: 10.1.32.239
+  Port: 8288
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.88
+  Check:
+    HTTP: http://10.0.0.1:8288/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000289
+  Name: inventory-service
+  Addr: 10.1.33.246
+  Port: 8289
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.89
+  Check:
+    HTTP: http://10.0.0.1:8289/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000290
+  Name: game-server
+  Addr: 10.1.34.253
+  Port: 8290
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.0.90
+  Check:
+    HTTP: http://10.0.0.1:8290/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000291
+  Name: chat-service
+  Addr: 10.1.35.6
+  Port: 8291
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.1.91
+  Check:
+    HTTP: http://10.0.0.1:8291/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000292
+  Name: asset-server
+  Addr: 10.1.36.13
+  Port: 8292
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.2.92
+  Check:
+    HTTP: http://10.0.0.1:8292/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000293
+  Name: auth-service
+  Addr: 10.1.37.20
+  Port: 8293
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.3.93
+  Check:
+    HTTP: http://10.0.0.1:8293/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000294
+  Name: presence-service
+  Addr: 10.1.38.27
+  Port: 8294
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.4.94
+  Check:
+    HTTP: http://10.0.0.1:8294/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000295
+  Name: notification-hub
+  Addr: 10.1.39.34
+  Port: 8295
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.5.95
+  Check:
+    HTTP: http://10.0.0.1:8295/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000296
+  Name: analytics-pipeline
+  Addr: 10.1.40.41
+  Port: 8296
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.6.96
+  Check:
+    HTTP: http://10.0.0.1:8296/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000297
+  Name: trading-service
+  Addr: 10.1.41.48
+  Port: 8297
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.7.97
+  Check:
+    HTTP: http://10.0.0.1:8297/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000298
+  Name: avatar-service
+  Addr: 10.1.42.55
+  Port: 8298
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.8.98
+  Check:
+    HTTP: http://10.0.0.1:8298/health
+    Interval: 10s
+    Timeout: 2s
+- ID: svc-000299
+  Name: inventory-service
+  Addr: 10.1.43.62
+  Port: 8299
+  Tags:
+  - roblox
+  - microservice
+  Meta:
+    registered_at: '2021-10-28T09:00:00'
+    ver: 1.9.99
+  Check:
+    HTTP: http://10.0.0.1:8299/health
+    Interval: 10s
+    Timeout: 2s
+telemetry:
+  retention: 60s

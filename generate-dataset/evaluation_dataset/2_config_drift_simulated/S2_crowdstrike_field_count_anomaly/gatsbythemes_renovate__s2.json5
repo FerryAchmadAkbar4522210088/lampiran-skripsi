@@ -1,0 +1,1512 @@
+{
+  "extends": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    "config:base",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    ":disablePeerDependencies",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    ":ignoreModulesAndTests",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    ":separateMajorReleases",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    ":combinePatchMinorReleases"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  ],
+  "dependencyDashboard": true,
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "labels": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    "renovate"
+  ],
+  "prHourlyLimit": 4,
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "prConcurrentLimit": 16,
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "rangeStrategy": "bump",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "bumpVersion": null,
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "semanticCommits": "enabled",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "timezone": "GMT",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "schedule": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    "before 10am on the first day of the month"
+  ],
+  "automerge": false,
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "ignoreDeps": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    "react",
+    "react-dom"
+  ],
+  "ignorePaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    "**/node_modules/**",
+    ".nvmrc"
+  ],
+  "postUpdateOptions": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    "yarnDedupeHighest"
+  ],
+  "updateNotScheduled": false,
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "packageRules": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    {
+      "groupName": "starters",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "starters",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "starters-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "examples/**"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies",
+        "devDependencies"
+      ]
+    },
+    {
+      "groupName": "starters",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "starters",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "starters-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "examples/**"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies",
+        "devDependencies"
+      ]
+    },
+    {
+      "groupName": "www",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "www",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "www-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "www/package.json"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies",
+        "devDependencies"
+      ],
+      "automerge": true,
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "additionalBranchPrefix": "www-"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "groupName": "www",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "www",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "www-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "www/package.json"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies",
+        "devDependencies"
+      ],
+      "additionalBranchPrefix": "www-"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "engines",
+        "@types/node"
+      ],
+      "enabled": false
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "groupName": "Monorepo",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "monorepo",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "monorepo",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "+(package.json)"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "devDependencies"
+      ]
+    },
+    {
+      "groupName": "Formatting & Linting",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "Formatting & linting",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "+(package.json)"
+      ],
+      "matchPackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier"
+      ],
+      "matchPackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major",
+        "minor",
+        "patch"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies",
+        "devDependencies"
+      ],
+      "automerge": true
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "groupName": "TypeScript",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "+(package.json)"
+      ],
+      "matchPackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "typescript"
+      ],
+      "matchPackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^@typescript-eslint/",
+        "^@types"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major",
+        "minor",
+        "patch"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "devDependencies"
+      ],
+      "automerge": true
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "groupName": "Testing Library",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "+(package.json)"
+      ],
+      "matchPackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^@testing-library/"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major",
+        "minor",
+        "patch"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "devDependencies"
+      ]
+    },
+    {
+      "groupName": "Theme UI",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "theme-ui",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/**",
+        "examples/**"
+      ],
+      "matchPackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major",
+        "minor",
+        "patch"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies",
+        "devDependencies"
+      ],
+      "dependencyDashboardApproval": true
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "groupName": "Emotion",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "commitMessageTopic": "emotion",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/**",
+        "examples/**"
+      ],
+      "matchPackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major",
+        "minor",
+        "patch"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies",
+        "devDependencies"
+      ],
+      "automerge": true
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-cara/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-cara",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-cara-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-cara{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-cara/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-cara",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-cara-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-cara{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emilia-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-emilia-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emilia-core-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emilia-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emilia-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-emilia-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emilia-core-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emilia-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emilia/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-emilia",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emilia-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emilia{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emilia/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-emilia",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emilia-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emilia{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emma-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-emma-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emma-core-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emma-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emma-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-emma-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emma-core-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emma-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emma/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-emma",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emma-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emma{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-emma/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-emma",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-emma-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-emma{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-graphql-playground/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-graphql-playground",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-graphql-playground-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-graphql-playground{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-graphql-playground/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-graphql-playground",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-graphql-playground-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-graphql-playground{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-jodie-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-jodie-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-jodie-core-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-jodie-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-jodie-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-jodie-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-jodie-core-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-jodie-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-jodie/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-jodie",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-jodie-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-jodie{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-jodie/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-jodie",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-jodie-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-jodie{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-minimal-blog-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-minimal-blog-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-minimal-blog-core-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-minimal-blog-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-minimal-blog-core/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-minimal-blog-core",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-minimal-blog-core-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-minimal-blog-core{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-minimal-blog/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-minimal-blog",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-minimal-blog-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-minimal-blog{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-minimal-blog/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-minimal-blog",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-minimal-blog-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-minimal-blog{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-specimens/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-specimens",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-specimens-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-specimens{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-specimens/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-specimens",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-specimens-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-specimens{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-status-dashboard/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-status-dashboard",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-status-dashboard-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-status-dashboard{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-status-dashboard/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-status-dashboard",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-status-dashboard-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-status-dashboard{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-styleguide/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies for gatsby-theme-styleguide",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-styleguide-prod-minor",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-styleguide{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    },
+    {
+      "matchPaths": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "themes/gatsby-theme-styleguide/package.json"
+      ],
+      "matchDepTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "major"
+      ],
+      "groupName": "major dependencies for gatsby-theme-styleguide",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "groupSlug": "gatsby-theme-styleguide-prod-major",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "excludePackageNames": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "eslint",
+        "prettier",
+        "typescript",
+        "@theme-ui/color",
+        "@theme-ui/mdx",
+        "@theme-ui/presets",
+        "@theme-ui/preset-system",
+        "@theme-ui/preset-tailwind",
+        "@theme-ui/prism",
+        "@theme-ui/sidenav",
+        "gatsby-plugin-theme-ui",
+        "theme-ui",
+        "@emotion/core",
+        "@emotion/styled",
+        "@emotion/react"
+      ],
+      "excludePackagePatterns": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        "^eslint-",
+        "^@typescript-eslint/",
+        "^@types",
+        "^@testing-library/"
+      ],
+      "commitMessageSuffix": "{{#unless groupName}} for gatsby-theme-styleguide{{/unless}}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+vpc_id = "VPC_ID_HERE"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+region = "REGION_HERE"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+profile_name ="PROFILE_NAME_HERE"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+ecs_cluster_name = "ECS_CLUSTER_NAME_HERE"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+loadbalancer_arn = "LOAD_BALANCER_ARN_HERE"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+hosted_zone_id = "ROUTE_53_HOSTED_ZONE_HERE"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+fargate_subnets = [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "SUBNET_1_HERE",
+  "SUBNET_2_HERE",
+  "SUBNET_3_HERE"]
+jupyter_docker_tag = "latest"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+cpu = 1024
+field_n_plus_1_unexpected=injected_by_content_system_bug
+memory = 2048
+field_n_plus_1_unexpected=injected_by_content_system_bug
+domain = "ROUTE_53_DOMAIN_NAME_HERE"
+field_n_plus_1_unexpected=injected_by_content_system_bug

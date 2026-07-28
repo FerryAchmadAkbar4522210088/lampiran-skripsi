@@ -1,0 +1,550 @@
+{
+  "schema": "bot-feature-file-v3",
+  "generated_at": "2025-11-18T11:00:00Z",
+  "source_query": "SELECT * FROM bot_features WHERE shard='r1'",
+  "feature_count": 60,
+  "hard_limit": 200,
+  "within_limit": true,
+  "features": [
+    {
+      "feature_id": "bf_0000",
+      "shard": "r1",
+      "weight": 0.557707,
+      "bias": -0.474989,
+      "feature_type": "tls_fingerprint",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0001",
+      "shard": "r1",
+      "weight": -1.020433,
+      "bias": -0.360462,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0002",
+      "shard": "r1",
+      "weight": 0.706798,
+      "bias": 0.39218,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0003",
+      "shard": "r1",
+      "weight": 0.36197,
+      "bias": -0.468217,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0004",
+      "shard": "r1",
+      "weight": -1.125448,
+      "bias": 0.005355,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0005",
+      "shard": "r1",
+      "weight": 0.24498,
+      "bias": 0.21602,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0006",
+      "shard": "r1",
+      "weight": 0.179766,
+      "bias": -0.279559,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0007",
+      "shard": "r1",
+      "weight": -0.887237,
+      "bias": 0.3693,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0008",
+      "shard": "r1",
+      "weight": 0.792558,
+      "bias": -0.159749,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0009",
+      "shard": "r1",
+      "weight": -1.138745,
+      "bias": 0.263494,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0010",
+      "shard": "r1",
+      "weight": -1.629017,
+      "bias": -0.403284,
+      "feature_type": "tls_fingerprint",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0011",
+      "shard": "r1",
+      "weight": 0.414904,
+      "bias": 0.307128,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0012",
+      "shard": "r1",
+      "weight": -0.1623,
+      "bias": -0.375174,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0013",
+      "shard": "r1",
+      "weight": -1.684799,
+      "bias": -0.206822,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0014",
+      "shard": "r1",
+      "weight": 0.474079,
+      "bias": 0.361707,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0015",
+      "shard": "r1",
+      "weight": -1.230846,
+      "bias": -0.430445,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0016",
+      "shard": "r1",
+      "weight": -1.088407,
+      "bias": -0.210612,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0017",
+      "shard": "r1",
+      "weight": 1.421271,
+      "bias": 0.366484,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0018",
+      "shard": "r1",
+      "weight": -0.888106,
+      "bias": 0.135684,
+      "feature_type": "tls_fingerprint",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0019",
+      "shard": "r1",
+      "weight": -1.349384,
+      "bias": -0.144729,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0020",
+      "shard": "r1",
+      "weight": -0.932089,
+      "bias": 0.436655,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0021",
+      "shard": "r1",
+      "weight": -1.71439,
+      "bias": 0.134978,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0022",
+      "shard": "r1",
+      "weight": 0.916507,
+      "bias": -0.336598,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0023",
+      "shard": "r1",
+      "weight": -0.920209,
+      "bias": 0.425391,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0024",
+      "shard": "r1",
+      "weight": 0.227799,
+      "bias": 0.184614,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0025",
+      "shard": "r1",
+      "weight": -1.083808,
+      "bias": -0.4679,
+      "feature_type": "tls_fingerprint",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0026",
+      "shard": "r1",
+      "weight": -0.395341,
+      "bias": -0.433811,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0027",
+      "shard": "r1",
+      "weight": 1.505471,
+      "bias": -0.185322,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0028",
+      "shard": "r1",
+      "weight": -0.003075,
+      "bias": 0.384683,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0029",
+      "shard": "r1",
+      "weight": -0.164593,
+      "bias": -0.23512,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0030",
+      "shard": "r1",
+      "weight": 0.979956,
+      "bias": 0.038977,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0031",
+      "shard": "r1",
+      "weight": 0.338344,
+      "bias": 0.397823,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0032",
+      "shard": "r1",
+      "weight": -0.552014,
+      "bias": 0.497326,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0033",
+      "shard": "r1",
+      "weight": 0.038105,
+      "bias": -0.409091,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0034",
+      "shard": "r1",
+      "weight": 1.444412,
+      "bias": -0.347159,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0035",
+      "shard": "r1",
+      "weight": 1.168317,
+      "bias": -0.07784,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0036",
+      "shard": "r1",
+      "weight": -0.460931,
+      "bias": 0.095888,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0037",
+      "shard": "r1",
+      "weight": 0.116457,
+      "bias": 0.471078,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0038",
+      "shard": "r1",
+      "weight": 0.721134,
+      "bias": -0.385448,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0039",
+      "shard": "r1",
+      "weight": 1.003511,
+      "bias": 0.268599,
+      "feature_type": "tls_fingerprint",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0040",
+      "shard": "r1",
+      "weight": -1.553791,
+      "bias": -0.065235,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0041",
+      "shard": "r1",
+      "weight": -1.987019,
+      "bias": 0.222092,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0042",
+      "shard": "r1",
+      "weight": -0.946444,
+      "bias": 0.000586,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0043",
+      "shard": "r1",
+      "weight": 0.030727,
+      "bias": -0.393589,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0044",
+      "shard": "r1",
+      "weight": -0.806221,
+      "bias": 0.138949,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0045",
+      "shard": "r1",
+      "weight": -1.204356,
+      "bias": -0.126086,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0046",
+      "shard": "r1",
+      "weight": 0.157516,
+      "bias": 0.278626,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0047",
+      "shard": "r1",
+      "weight": 1.673974,
+      "bias": 0.098945,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0048",
+      "shard": "r1",
+      "weight": -1.922093,
+      "bias": 0.429099,
+      "feature_type": "tls_fingerprint",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0049",
+      "shard": "r1",
+      "weight": -1.042191,
+      "bias": -0.259128,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0050",
+      "shard": "r1",
+      "weight": 1.787798,
+      "bias": -0.414347,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0051",
+      "shard": "r1",
+      "weight": 1.264093,
+      "bias": 0.477984,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0052",
+      "shard": "r1",
+      "weight": 1.063338,
+      "bias": -0.371609,
+      "feature_type": "mouse_entropy",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0053",
+      "shard": "r1",
+      "weight": 1.787395,
+      "bias": -0.334873,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0054",
+      "shard": "r1",
+      "weight": 1.489732,
+      "bias": -0.076862,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0055",
+      "shard": "r1",
+      "weight": 1.715654,
+      "bias": 0.255265,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0056",
+      "shard": "r1",
+      "weight": -1.195396,
+      "bias": -0.188284,
+      "feature_type": "ip_reputation",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0057",
+      "shard": "r1",
+      "weight": 0.599512,
+      "bias": -0.0619,
+      "feature_type": "keystroke_cadence",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0058",
+      "shard": "r1",
+      "weight": -0.194055,
+      "bias": -0.252094,
+      "feature_type": "http_header_ratio",
+      "version": "2025-11-18",
+      "active": true
+    },
+    {
+      "feature_id": "bf_0059",
+      "shard": "r1",
+      "weight": -0.647658,
+      "bias": 0.088309,
+      "feature_type": "request_timing",
+      "version": "2025-11-18",
+      "active": true
+    }
+  ]
+}

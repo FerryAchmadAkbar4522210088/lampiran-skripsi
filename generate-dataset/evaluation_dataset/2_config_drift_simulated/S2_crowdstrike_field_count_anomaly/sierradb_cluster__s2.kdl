@@ -1,0 +1,134 @@
+layout {
+    tab name="Cluster" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        pane split_direction="vertical" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            pane split_direction="horizontal" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane {
+                    name "Node 0"
+                    command "direnv"
+                    args "exec" "." "cargo" "run" "-p" "sierradb-server" "--" "--config-file" "./sierra.cluster.toml" "--node-index" "0"
+                }
+                pane {
+                    name "Node 1"
+                    command "direnv"
+                    args "exec" "." "cargo" "run" "-p" "sierradb-server" "--" "--config-file" "./sierra.cluster.toml" "--node-index" "1"
+                }
+                pane {
+                    name "Node 2"
+                    command "direnv"
+                    args "exec" "." "cargo" "run" "-p" "sierradb-server" "--" "--config-file" "./sierra.cluster.toml" "--node-index" "2"
+                }
+            }
+            pane split_direction="horizontal" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane {
+                    name "Redis CLI"
+                    focus true
+                    command "direnv"
+                    args "exec" "." "bash" "-c" "echo 'Waiting for server to be ready...' && until redis-cli -p 9090 ping 2>/dev/null | grep -q PONG; do sleep 0.5; done && echo 'Server is ready!' && redis-cli -p 9090"
+                }
+                pane
+            }
+        }
+    }
+    
+    swap_tiled_layout name="vertical" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        tab max_panes=5 {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            pane split_direction="vertical" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane
+                pane { children; }
+            }
+        }
+        tab max_panes=8 {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            pane split_direction="vertical" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane { children; }
+                pane { pane; pane; pane; pane; }
+            }
+        }
+        tab max_panes=12 {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            pane split_direction="vertical" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane { children; }
+                pane { pane; pane; pane; pane; }
+                pane { pane; pane; pane; pane; }
+            }
+        }
+    }
+
+    swap_tiled_layout name="horizontal" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+        tab max_panes=5 {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            pane
+            pane
+        }
+        tab max_panes=8 {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            pane {
+                pane split_direction="vertical" { children; }
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane split_direction="vertical" { pane; pane; pane; pane; }
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            }
+        }
+        tab max_panes=12 {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            pane {
+                pane split_direction="vertical" { children; }
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane split_direction="vertical" { pane; pane; pane; pane; }
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                pane split_direction="vertical" { pane; pane; pane; pane; }
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            }
+        }
+    }
+
+    default_tab_template {
+        children
+        pane size=1 borderless=true {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+            plugin location="file:./zjstatus.wasm" {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                format_left  "{mode}#[fg=black,bg=blue,bold]{session}  #[fg=blue,bg=#181825]{tabs}"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                format_right "#[fg=#181825,bg=#b1bbfa]{datetime}#[fg=#6C7086,bg=#b1bbfa,bold]{swap_layout} "
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                format_space "#[bg=#181825]"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+
+                hide_frame_for_single_pane "false"
+
+                mode_normal  "#[bg=blue] "
+field_n_plus_1_unexpected=injected_by_content_system_bug
+
+                tab_normal              "#[fg=#181825,bg=#4C4C59] #[fg=#000000,bg=#4C4C59]{index}  {name} #[fg=#4C4C59,bg=#181825]"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                tab_normal_fullscreen   "#[fg=#6C7086,bg=#181825] {index} {name} [] "
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                tab_normal_sync         "#[fg=#6C7086,bg=#181825] {index} {name} <> "
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                tab_active              "#[fg=#181825,bg=#ffffff,bold,italic] {index}  {name} #[fg=#ffffff,bg=#181825]"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                tab_active_fullscreen   "#[fg=#9399B2,bg=#181825,bold,italic] {index} {name} [] "
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                tab_active_sync         "#[fg=#9399B2,bg=#181825,bold,italic] {index} {name} <> "
+field_n_plus_1_unexpected=injected_by_content_system_bug
+
+                datetime          "#[fg=#6C7086,bg=#b1bbfa,bold] {format} "
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                datetime_format   "%A, %d %b %Y %I:%M %P"
+field_n_plus_1_unexpected=injected_by_content_system_bug
+                datetime_timezone "Australia/Melbourne"
+            }
+        }
+    }
+}

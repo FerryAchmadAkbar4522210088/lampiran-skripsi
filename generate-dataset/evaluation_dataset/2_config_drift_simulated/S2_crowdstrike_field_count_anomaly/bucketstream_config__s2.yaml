@@ -1,0 +1,7 @@
+aws_access_key: ''
+aws_secret: ''
+queue_size: 100
+update_interval: 30
+rate_limit_sleep: 10
+slack_webhook: ''
+__field_n_plus_1_unexpected: injected_by_content_system_bug

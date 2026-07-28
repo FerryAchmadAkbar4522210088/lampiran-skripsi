@@ -1,0 +1,96 @@
+// Configuration file for application.
+// vim: set ts=8 sw=8 et sts=8 ai ft=javascript:
+// Values here are suitable for committing to the public repository. They are
+// overriden by the values in config.json.private.
+{
+        // These values are for the streaming system as a whole.
+        "config": {
+                // "secret" should be overriden in config.json.private
+                "secret": "move me to config.private.json",
+
+                // IP address regex(s) for preventing access to video streams.
+		// (typically conference/event wireless IP's)
+                "localips": [
+                        "^192\\.168\\.",
+                        "^172\\.(16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)\\.",
+                        "^10\\.",
+                        ""
+                ],
+
+                // How frequently to reload the front page and schedule data?
+                "reload" : 600,
+
+                // HACK for PyCon style schedule
+                "schedule-format": false,
+                "schedule-url": false,
+                "schedule-timezone": false,
+
+                // Terminator
+                "": ""
+        },
+
+        // These values are "per channel".  The "default" key is looked up in
+        // if a value is not found in a channel config.
+        "default": {
+                // Conference this channel is part of
+                "conference": false,
+
+                // Title and look
+                "title": "Unknown stream",
+                "link": "http://www.timvideos.us/",
+                "logo": "/static/logo/timvideos.png",
+
+                // Communication information
+                "twitter_announce": "@timvideosus",
+                "twitter": "@timvideosus OR #timvideos OR #timvideosus",
+                // IRC networks can be "none", "oftc", "freenode"
+                "ircnetwork": "freenode",
+                "ircchannel": "#timvideos",
+                "irclog": "http://logs.timvideos.us/%23timvideos/preview.log.html",
+
+                // Information used for the schedule processing
+                "schedule": false,
+                "schedule-key": false,
+                "schedule-see-also": [],
+                "schedule-timezone": "US/Eastern",
+
+                // Preview image used for the channel display
+                "preview": "http://preview.timvideos.us/%23timvideos/latest.png",
+
+                // Flumotion IP addresses and configuration
+                // If "flumotion" == False, then Flumotion support will be disabled.
+                // Flumotion+jwplayer streaming will be used by default if it is
+                // present.
+                "flumotion": true,
+                "flumotion-collector": false,
+                "flumotion-encoder": false,
+                "flumotion-mixer": false,
+                // These three values (flumotion-{user,password,salt}) should
+                // be override in config.json.private
+                "flumotion-user": false,
+                "flumotion-password": false,
+                "flumotion-salt": false,
+
+		// YouTube
+		// This takes one parameter, a video ID (v=) of the YouTube
+		// Live Channel to play.
+		// If "youtube" == null, then YouTube support will be disabled.
+		"youtube": null,
+
+                // Terminator
+                "": ""
+        },
+
+        // Example of a channel.
+        "example": {
+                "title": "Example room",
+
+                // The values missing here will be looked up in the default
+                // dictionary above.
+
+                "": ""
+        },
+
+        // Terminator
+        "": {}
+}

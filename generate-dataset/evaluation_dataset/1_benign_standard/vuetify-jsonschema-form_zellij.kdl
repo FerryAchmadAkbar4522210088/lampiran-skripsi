@@ -1,0 +1,32 @@
+layout {
+    pane {
+      split_direction "vertical"
+      pane name="vjsf" borderless=true {
+        command "bash"
+        args "-ic" "nvm use && bash"
+      }
+      pane name="run doc" {
+        command "bash"
+        args "-ic" "nvm use && npm -w doc run compile-examples && npm -w doc run dev"
+      }
+    }
+    pane {
+      split_direction "vertical"
+      pane name="lib tests" {
+        command "bash"
+        args "-ic" "nvm use && npm -w lib run test"
+      }
+      pane name="lib build" {
+        command "bash"
+        args "-ic" "nvm use && npm -w lib run watch:build"
+      }
+      pane name="rel deps" {
+        command "bash"
+        args "-ic" "nvm use && npx relative-deps watch"
+      }
+    }
+    pane size=2 borderless=true {
+      command "bash"
+        args "-ic" "echo -n -e \"Doc dev server available at \\e[1;96mhttp://localhost:3133\\033[0m\""
+    }
+}

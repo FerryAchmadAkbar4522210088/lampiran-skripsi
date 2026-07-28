@@ -1,0 +1,470 @@
+# --- COPY_0 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_1 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_2 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_3 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_4 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_5 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_6 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_7 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_8 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}
+# --- COPY_9 (gc_not_cleaned=true) ---
+{
+    "MKD": {
+        "name": "Macedonian Denar",
+        "iso": {
+            "code": "MKD",
+            "number": "807"
+        },
+        "units": {
+            "major": {
+                "name": "denar",
+                "symbol": "ден"
+            },
+            "minor": {
+                "name": "deni",
+                "symbol": "",
+                "majorValue": 0.01
+            }
+        },
+        "banknotes": {
+            "frequent": [
+                "ден10",
+                "ден50",
+                "ден100",
+                "ден200",
+                "ден500",
+                "ден1000",
+                "ден2000"
+            ],
+            "rare": [
+                "ден5000"
+            ]
+        },
+        "coins": {
+            "frequent": [
+                "50",
+                "ден1",
+                "ден2",
+                "ден5",
+                "ден10",
+                "ден50"
+            ],
+            "rare": [
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@cspotcode/outdent",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "version": "0.8.0",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "exports": "./src/index.ts",
+field_n_plus_1_unexpected=injected_by_content_system_bug
+  "publish": {
+field_n_plus_1_unexpected=injected_by_content_system_bug
+    "include": [
+field_n_plus_1_unexpected=injected_by_content_system_bug
+      "src",
+      "LICENSE",
+      "README.md"
+    ]
+  }
+}
